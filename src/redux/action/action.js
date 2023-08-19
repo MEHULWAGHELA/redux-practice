@@ -1,9 +1,9 @@
 import { DECREMENT, INCREMENT } from "../type/type"
 
-export const incrementCount = (dispatch) => {
-    dispatch({ type: INCREMENT })
+export const incrementCount = (number) => {
+    return { type: INCREMENT, number: number }
 }
 
-export const decrementCount = (dispatch) => {
-    dispatch({ type: DECREMENT })
+export const decrementCount = (number) => {
+    return { type: DECREMENT, number: number }
 }

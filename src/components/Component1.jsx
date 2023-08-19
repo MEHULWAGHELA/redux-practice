@@ -10,8 +10,8 @@ const Component1 = () => {
         <>
             <div>Component1</div>
             <h1>{state.counter.count}</h1>
-            <button onClick={() => incrementCount(dispatch)}>Increment</button>
-            <button onClick={() => decrementCount(dispatch)}>Decrement</button>
+            <button onClick={() => dispatch(incrementCount(5))}>Increment</button>
+            <button onClick={() => dispatch(decrementCount(10))}>Decrement</button>
         </>
     )
 }
